@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-size: 15px;
+  font-family: arial, helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  width: 80%;
+  margin:auto;
+}
+
+header {
+  background-color: orange;
+  border-bottom: darkorange solid 5px;
+  min-height: 100px;
+}
+
+header li a{
+  text-decoration: none;
+  color: white;
+  float:right;
+  padding:0 20px;
+  padding-top: 38px;
+  text-transform: uppercase;
+}
+
+header li {
+  display: inline;
+}
+
+header h1 {
+  padding-top: 6px;
+  float:left;
+}
+
+header li a:hover{
+  color:black;
+}
+
+.showcase {
+
+  min-height: 400px;
+  min-width: 90%;
+  position: relative;
+}
+
+.show {
+  background-image: url("../img/gandalf.gif");
+  background-position: center;
+}
+
+.showcase h2 {
+position: absolute;
+top: 50px;
+left:30px;
+color: white;
+}
+
+.showcase h3 {
+  position: absolute;
+  top: 300px;
+  left: 700px;
+  color: white;
+}
+
+footer {
+  border-top: 20px solid orange;
+  background-color: orange;
+  border-bottom: 100px solid orange;
+}
+.newsletter {
+  display: inline;
+}
+
+footer form {
+  display: inline;
+}
+
+video {
+  width: 300px;
+  height: 200px;
+  margin: 5px;
+}
