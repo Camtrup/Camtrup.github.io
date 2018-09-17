@@ -1,0 +1,12 @@
+main {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+
+}
+
+main p {
+  background-color: green;
+  text-align: center;
+  padding: 30px;
+  margin: 3px;
+}
