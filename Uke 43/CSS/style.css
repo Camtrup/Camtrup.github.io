@@ -1,0 +1,32 @@
+body{
+margin: 0;
+padding: 0;
+font-family: arial, helvetica, sans-serif;
+}
+#tabell{
+display: grid;
+grid-template-columns: repeat(18, 1fr);
+grid-gap: 5px;
+grid-auto-rows: minmax(40px, auto);
+}
+#tabell div{
+
+}
+.metall{
+  background-color: lightblue;
+}
+.halv-metall{
+  background-color: orange;
+}
+.ikke-metall {
+  background-color: yellow;
+}
+#tabell div p:nth-child(odd){
+  font-size: 15px;
+}
+#tabell div p:nth-child(even){
+  font-size: 10px;
+}
+#tabell p{
+  text-align: center;
+}

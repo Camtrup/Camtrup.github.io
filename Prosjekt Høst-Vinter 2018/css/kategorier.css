@@ -1,0 +1,33 @@
+.kategorier-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows
+  grid-gap: 20px;
+  grid-row-gap: 20px;
+  margin: 10px;
+  margin-left: 40px;
+}
+.kategorier-grid img {
+  position: static;
+}
+.kategorier-grid a p {
+  position: relative;
+  top: 142px;
+  left: 52px;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  opacity: 0.4;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+.kategori a {
+  text-decoration: none;
+}
+.science_fiction a p {
+  left: 15px;
+}
+.kategori:hover {
+
+}

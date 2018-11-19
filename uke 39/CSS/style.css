@@ -1,0 +1,33 @@
+body {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4
+}
+li {
+  display: inline;
+  float: right;
+  padding-right: 100px;
+  text-transform: uppercase;
+}
+ul {
+  padding-right: 190px;
+  padding-top: 36px;
+}
+.logo {
+  float: left;
+  padding-left: 55px;
+}
+header {
+  height: 400px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: black;
+}
+nav ul a:hover {
+  color: orange;
+}

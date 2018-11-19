@@ -1,0 +1,59 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+nav{
+  height: 150px;
+}
+.navbar li {
+  display: inline;
+  float: right;
+  padding-right: 50px;
+  padding-top: 30px;
+}
+.logo {
+  float: left;
+  padding-left: 40px;
+  font-size: 25px;
+}
+.logo a {
+  color: black;
+  text-decoration: none;
+}
+.navbar {
+  padding-right: 300px;
+}
+.navbar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+.navbar a:hover {
+color: orange;
+}
+.innhold {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.innhold div {
+  text-align: center;
+  grid-auto-rows: minmax(150px, auto);
+  min-height: 100px;
+  background-color: lightblue;
+}
+.en {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.to {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.fem {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
