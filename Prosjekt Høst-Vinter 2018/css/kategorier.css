@@ -1,6 +1,6 @@
 .kategorier-grid {
   display: grid;
-  grid-template-columns: repeat(5, 200px);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 284px;
   grid-gap: 20px;
   grid-row-gap: 20px;
@@ -15,12 +15,15 @@
   top: 142px;
   left: 52px;
   font-size: 20px;
-  color: white;
+  color: #00FFFF;
   text-transform: uppercase;
-  opacity: 0.3;
+  opacity: 0.7;
   text-decoration: none;
   padding: 0;
   margin: 0;
+}
+.kategori {
+  transition: 1s;
 }
 .kategori a {
   text-decoration: none;
@@ -29,25 +32,10 @@
   /*Ganske mange flere bokstaver enn de andre kategoriene*/
   left: 15px;
 }
-.kategorier-grid div:hover {
-  opacity: 0.1;
+.kategori p {
+height: px;
+width: 200px;
 }
-.kategorier-grid div:hover {
-  opacity: 0.8;
-}
-.kategori {
-
-}
-/*bilder*/
-.action {
-  background-image: url("../bilder/kategorier/action1.jpg");
-}
-.drama {
-  background-image: url("../bilder/kategorier/drama1.jpg");
-}
-.eventyr {
-  background-image: url("../bilder/kategorier/eventyr1.jpg");
-}
-.science_fiction {
-  background-image: url("../bilder/kategorier/scifi1.jpg");
+.kategori:hover {
+  opacity: 0.4;
 }

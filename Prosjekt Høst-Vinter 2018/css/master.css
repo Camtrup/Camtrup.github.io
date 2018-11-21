@@ -5,11 +5,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  max-width: 1200px;
-  margin: auto;
+  max-width: 100%;
+  margin:
 }
 .navbar {
-  overflow: hidden;
 }
 .navbar li {
   padding-right: 100px;
