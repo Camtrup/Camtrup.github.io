@@ -39,11 +39,8 @@ body {
   color: orange;
 }
 header {
-height: 100px;
+min-height: 100px;
 background-image: linear-gradient(to bottom right, #070707, #413e3d);
 border: solid #1e1d1d 5px;
 top: 0;
-}
-main {
-
 }
