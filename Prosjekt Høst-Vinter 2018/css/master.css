@@ -6,7 +6,6 @@ body {
   padding: 0;
   background-color: #f4f4f4;
   max-width: 100%;
-  margin:
 }
 .navbar {
 }
@@ -27,7 +26,7 @@ body {
 #logo {
   float: left;
   margin-left: 10px;
-  margin-top: 13px;
+  margin-top: 0px;
 }
 .navbar ul li {
   display: inline;
@@ -42,4 +41,9 @@ min-height: 100px;
 background-image: linear-gradient(to bottom right, #070707, #413e3d);
 border: solid #1e1d1d 5px;
 top: 0;
+}
+#myInput {
+  background-image: url("../bilder/søk.png");
+  background-repeat: no-repeat;
+  background-position: 150px 3.8px;
 }
