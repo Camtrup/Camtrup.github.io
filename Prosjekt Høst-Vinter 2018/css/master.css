@@ -1,4 +1,8 @@
 /*Global CSS*/
+#yeet {
+  background-image: url("../bilder/gandalf.gif");
+  background-position: center;
+}
 body {
   font-family: arial, helvetica, sans-serif;
   font-size: 15px;
