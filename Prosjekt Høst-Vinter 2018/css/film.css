@@ -1,3 +1,7 @@
 .beskrivelse {
   width: 600px;
 }
+.oversikt {
+  display: grid;
+  grid-template-columns: auto auto ;
+}
