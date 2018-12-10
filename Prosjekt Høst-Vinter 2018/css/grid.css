@@ -42,6 +42,9 @@ width: 200px;
 }
 
 /*filmer og kategorier*/
+main {
+  min-height: 600px;
+}
 .filmer-grid {
   display: grid;
   grid-template-columns: repeat(6, 182px);

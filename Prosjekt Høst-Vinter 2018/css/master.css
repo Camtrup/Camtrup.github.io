@@ -1,7 +1,8 @@
 /*Global CSS*/
-#yeet {
+#yes {
   background-image: url("../bilder/gandalf.gif");
   background-position: center;
+  color: white;
 }
 body {
   font-family: arial, helvetica, sans-serif;
@@ -10,8 +11,6 @@ body {
   padding: 0;
   background-color: #f4f4f4;
   max-width: 100%;
-}
-.navbar {
 }
 .navbar li {
   padding-right: 100px;
@@ -50,4 +49,42 @@ top: 0;
   background-image: url("../bilder/søk.png");
   background-repeat: no-repeat;
   background-position: 150px 3.8px;
+}
+
+/*Dropdown-meny til kategorier*/
+.dropdowninnhold {
+  display: none;
+  position: absolute;
+  background-color: #303030;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdowninnhold a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdowninnhold a:hover {
+  background-color: 0;
+}
+.dropdown:hover .dropdowninnhold {
+  display: block;
+}
+footer{
+  height: 150px;
+  background-color: #303030;
+}
+footer ul {
+  padding-top: 50px;
+}
+footer li {
+  display: inline;
+  margin-left: 150px;
+  color: #9c9a9a;
 }
