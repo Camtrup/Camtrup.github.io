@@ -10,6 +10,8 @@
   border: solid 5px black;
   width: 270px;
   border-radius: 20px;
+  grid-column: 2/3;
+  grid-row: 0/3
 }
 .liste li {
   margin-top: 14px;
@@ -17,6 +19,9 @@
 .lister a {
   color: darkblue;
   text-decoration: none;
+}
+.lister {
+  margin-top: 50px;
 }
 main {
   margin-left: 30px;
@@ -30,9 +35,6 @@ main {
 }
 .nyhet a {
   font-size: 15px;
-}
-section {
-  padding-top: 100px;
 }
 
 /*Gå til Nyheter Knapp*/
@@ -71,7 +73,7 @@ section h1 {
   overflow: hidden;
   height: 450px;
   width: 728px;
-  margin: 50px auto;
+  margin: 50px 0px 50px 20px;
 }
 
 .slide-wrapper {
