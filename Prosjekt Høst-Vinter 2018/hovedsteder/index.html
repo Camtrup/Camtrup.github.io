@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+
+    <script>
+    function myFunction() {
+        var elmnt = document.getElementById("nyheter");
+        elmnt.scrollIntoView();
+    }
+    </script>
+
     <link rel="stylesheet" href="../css/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/master.css">
@@ -9,6 +17,9 @@
     <title>CAM Filmer</title>
   </head>
   <body>
+
+    <button onclick="myFunction()" id="myBtn" title="Gå til Nyheter">Nyheter</button>
+
     <header>
       <nav>
         <nav>
@@ -47,8 +58,48 @@
           </div>
         </nav>
     </header>
+
+    <section>
+
+      <h1>Nye Filmer</h1>
+
+      <div id="slideshow">
+        <div class="slide-wrapper">
+
+          <div class="slide">
+            <h1 class="en slide-number">Fabeldyr: Grindelwalds Forbrytelser</h1>
+          </div>
+
+          <div class="slide">
+            <h1 class="to slide-number">Creed 2</h1>
+          </div>
+
+          <div class="slide">
+            <h1 class="tre slide-number">Bohemian Rhapsody</h1>
+          </div>
+
+          <div class="slide">
+            <h1 class="fire slide-number">De Utrolige 2</h1>
+          </div>
+
+          <div class="slide">
+            <h1 class="fem slide-number">5</h1>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div id="nyheter">
+
+    </div>
+
     <main class="side">
+
+
       <div class="nyheter">
+
+        <h1>Nyheter</h1>
+
         <div class="nyhet_en nyhet">
           <h2>Den animerte Spider-man er snart på kino!</h2>
           <embed src="https://www.youtube.com/v/tg52up16eq0" width="600" height="400">
@@ -67,7 +118,11 @@
         </div>
 
       </div>
+
       <div class="lister">
+
+        <h2>Topplister</h2>
+
         <div class="julefilmer liste">
           <ol>
             <h4>Julefilmer du bør se</h4>

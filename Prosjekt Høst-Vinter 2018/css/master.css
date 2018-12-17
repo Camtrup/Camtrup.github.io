@@ -12,6 +12,14 @@ body {
   background-color: #f4f4f4;
   max-width: 100%;
 }
+header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+main{
+  padding-top: 100px;
+}
 .navbar li {
   padding-right: 100px;
 }

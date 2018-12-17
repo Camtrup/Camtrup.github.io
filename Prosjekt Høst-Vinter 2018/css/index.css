@@ -9,6 +9,7 @@
   margin-top: 20px;
   border: solid 5px black;
   width: 270px;
+  border-radius: 20px;
 }
 .liste li {
   margin-top: 14px;
@@ -29,4 +30,97 @@ main {
 }
 .nyhet a {
   font-size: 15px;
+}
+section {
+  padding-top: 100px;
+}
+
+/*Gå til Nyheter Knapp*/
+
+#myBtn {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #070707;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/*slideshow*/
+
+section h1 {
+  text-align: center;
+}
+
+.nyheter h1 {
+  text-align: center;
+}
+
+#slideshow {
+  overflow: hidden;
+  height: 450px;
+  width: 728px;
+  margin: 50px auto;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 18s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 450px;
+  width: 728px;
+}
+
+.slide:nth-child(1) {
+  background-image: url("../bilder/filmer/fantastic.jpg");
+  background-position: center;
+}
+
+.slide:nth-child(2) {
+  background-image: url("../bilder/filmer/creedII.jpg");
+  background-position: center;
+}
+
+.slide:nth-child(3) {
+  background-image: url("../bilder/filmer/bohemianr.png");
+  background-position: center;
+}
+
+.slide:nth-child(4) {
+  background-image: url("../bilder/filmer/incredibles.jpg");
+  background-position: center;
+}
+
+.slide-number {
+  color: white;
+  text-align:left;
+  font-size: 20px;
+}
+
+.slide-wrapper .en {
+  color: black;
+}
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
 }
