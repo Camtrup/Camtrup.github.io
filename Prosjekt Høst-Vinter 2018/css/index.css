@@ -1,6 +1,8 @@
 .side {
   display: grid;
   grid-template-columns: 70% 30%;
+  grid-auto-rows: 550px;
+  height: 2600px;
 }
 .nyheter {
   margin: auto;
@@ -35,6 +37,9 @@ main {
 }
 .nyhet a {
   font-size: 15px;
+}
+#nyheter {
+  padding-top: 150px;
 }
 
 /*Gå til Nyheter Knapp*/
