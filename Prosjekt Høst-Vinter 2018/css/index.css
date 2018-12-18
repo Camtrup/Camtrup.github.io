@@ -64,8 +64,6 @@ main {
   background-color: #555;
 }
 
-/*slideshow*/
-
 section h1 {
   text-align: center;
 }
@@ -73,6 +71,8 @@ section h1 {
 .nyheter h1 {
   text-align: center;
 }
+
+/*slideshow*/
 
 #slideshow {
   overflow: hidden;
@@ -114,7 +114,7 @@ section h1 {
 
 .slide-number {
   color: white;
-  text-align:left;
+  text-align:;
   font-size: 20px;
 }
 
