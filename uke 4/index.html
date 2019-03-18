@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAlVCTqgzlxk2qW-67DdyClwI-rspFIfTs",
+    authDomain: "database-96472.firebaseapp.com",
+    databaseURL: "https://database-96472.firebaseio.com",
+    projectId: "database-96472",
+    storageBucket: "",
+    messagingSenderId: "242671022007"
+  };
+  firebase.initializeApp(config);
+</script>
+<script>
+     const db = firebase.database();
+     const kontaktliste = db.ref("kontaktliste")
+     kontaktliste.push(
+     {
+       "navn":"casper",
+       "etternavn":"amtrup",
+       "telefonummer":48200527,
+     }
+     )
+     kontaktliste.push(
+     {
+       "navn":"mogens",
+       "etternavn":"LA",
+       "telefonummer":113,
+     }
+
+     )
+     kontaktliste.push(
+     {
+       "navn":"casper",
+       "etternavn":"amtrup",
+       "telefonummer":48200527,
+     }
+
+     )
+     kontaktliste.push(
+     {
+       "navn":"mogens",
+       "etternavn":"LA",
+       "telefonummer":113,
+     }
+
+     )
+   </script>
+
+
+  </body>
+</html>

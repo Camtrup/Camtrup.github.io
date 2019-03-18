@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+      <link rel="stylesheet" href="master.css">
+        <meta charset="UTF-8">
+        <title>Nettbutikk</title>
+        <!--Lim inn kode fra firebase her-->
+
+        <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyDrXIyk9D5ii4WTEes0Pzp9RcYQytkqVVo",
+            authDomain: "yeet-849d7.firebaseapp.com",
+            databaseURL: "https://yeet-849d7.firebaseio.com",
+            projectId: "yeet-849d7",
+            storageBucket: "yeet-849d7.appspot.com",
+            messagingSenderId: "987345385785"
+          };
+          firebase.initializeApp(config);
+        </script>
+
+    </head>
+    <body>
+      <button onclick="visAlle()" name="ja">Alle</button>
+      <button onclick="sortByGrass()" name="button">Grass</button>
+      <button onclick="sortByName()" name="knapp">Name</button>
+      <button onclick="sortByHP()">HP</button>
+      <button onclick="sortByCP()">CP</button>
+
+        <main>
+
+        </main>
+
+        <script>
+            const main = document.querySelector("main"); // Variabel som referer til mian-elementet
+
+            // Referanser til databasen
+            const db = firebase.database();
+            const pokemon = db.ref("pokemon");
+
+            function visVare(snapshot){
+                //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
+                let pokemon = snapshot.val();
+                main.innerHTML +=`
+                    <article class="pokemon">
+                        <h1>${pokemon.Name}</h1>
+                        <img src=${pokemon.ImageURL}>
+                        <h2>MaxCP:${pokemon.MaxCP} - MaxHP:${pokemon.MaxHP}</h2>
+                        <p>Type: ${pokemon.Type1}, ${pokemon.Type2}
+
+                    </article>
+                `
+            }
+
+            pokemon.on("child_added",visVare); // Spørring som lytter til nye oppføringer i databasen, hvis det skjer kjøres funksjonen visVare.
+
+
+            function visAlle(){
+              main.innerHTML = ""
+              pokemon
+                .on("child_added",visVare);
+            }
+
+            function sortByGrass(){
+              main.innerHTML = ""
+              pokemon
+                .orderByChild("Type1")
+                .equalTo("Grass")
+                .on("child_added",visVare);
+            }
+
+            function sortByName(){
+              main.innerHTML = ""
+              pokemon
+                .orderByChild("Name")
+                .startAt("B")
+                .endAt("C")
+                .on("child_added",visVare);
+            }
+            function sortByHP(){
+              main.innerHTML = ""
+              pokemon
+                .orderByChild("MaxHP")
+                .endAt("First")
+                .on("child_added", visVare)
+            }
+            function sortByCP(){
+              main.innerHTML=""
+              pokemon
+                .orderByChild("MaxCP")
+                .on("child_added", visVare)
+            }
+
+
+
+
+
+
+
+        </script>
+
+    </body>
+</html>

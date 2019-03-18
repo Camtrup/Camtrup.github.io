@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dyreklinikken</title>
+    <link rel="stylesheet" href="css/master.css">
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCsTXq5CT-ppbNZU1AwHV2juCUb-OpYeNM",
+        authDomain: "prove-ee62b.firebaseapp.com",
+        databaseURL: "https://prove-ee62b.firebaseio.com",
+        projectId: "prove-ee62b",
+        storageBucket: "",
+        messagingSenderId: "544525895027"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <!-- Husk å koble til firebase -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button onclick="visAlle()">Vis Alle</button>
+        <button onclick="hunderAlder()">Alder til Hunder</button> <!-- Gjør ferdig knappene og koblingene her-->
+        <button onclick="treGråKatter()">Tre Grå Katter</button>
+        <button onclick="navn()">Navn T og M</button>
+        <button onclick="alder()">Mellom 2 og 5</button>
+
+      </nav>
+    </header>
+    <main>
+
+    </main>
+
+    <script>
+      const main = document.querySelector("main");
+      const db = firebase.database();
+      const hunder = db.ref("Dyr/Hunder");  //Fyll inn riktig referanse
+      const katter = db.ref("Dyr/Katter")                            //Lag en referanse for katter også!
+
+      function genererHTML(snapshot){
+        let dyr = snapshot.val();
+        main.innerHTML +=`
+            <article class="Dyr">
+              <h1>${dyr.Navn}</h1>
+              <img src="${dyr.Bilde}" alt="">
+              <p>Farge: ${dyr.Farge1}, ${dyr.Farge2}</p>
+              <p>Alder: ${dyr.Alder}</p>
+            </article>
+        `
+      }
+
+      function visAlle(){
+        main.innerHTML = "";
+        hunder.on("child_added",genererHTML);
+        katter.on("child_added", genererHTML);
+      }
+
+      visAlle();
+
+      function hunderAlder(){
+        main.innerHTML = "";
+        hunder
+          .orderByChild("Alder")
+          .on("child_added", genererHTML);
+      }
+
+      function treGråKatter(){
+        main.innerHTML = "";
+        katter
+          .orderByChild("Farge1")
+          .equalTo("Grå")
+          .limitToFirst(3)
+          .on("child_added", genererHTML);
+
+        katter
+          .orderByChild("Farge2")
+          .equalTo("Grå")
+          .limitToFirst(3)                //Kan hende det hadde blitt 6 om det hadde vært grå på farge2?
+          .on("child_added", genererHTML);
+      }
+
+      function navn(){
+        main.innerHTML="";
+        hunder
+          .orderByChild("Navn")
+          .startAt("T")
+          .endAt("U")
+          .on("child_added", genererHTML);
+        katter
+          .orderByChild("Navn")
+          .startAt("T")
+          .endAt("U")
+          .on("child_added", genererHTML);
+        hunder
+          .orderByChild("Navn")
+          .startAt("M")
+          .endAt("N")
+          .on("child_added", genererHTML);
+        katter
+          .orderByChild("Navn")
+          .startAt("M")
+          .endAt("N")
+          .on("child_added", genererHTML);
+      }
+
+      function alder(){
+        main.innerHTML="";
+        hunder
+          .orderByChild("Alder")
+          .startAt(2)
+          .endAt(5)
+          .on("child_added",genererHTML);
+        katter
+          .orderByChild("Alder")
+          .startAt(2)
+          .endAt(5)
+          .on("child_added",genererHTML)
+      }
+
+      // Lag egne funksjoner som tilfredstiller spørringene til oppgave 3A, 3B, 3C og 3D her:
+
+    </script>
+
+  </body>
+</html>

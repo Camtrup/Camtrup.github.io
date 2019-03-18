@@ -85,7 +85,7 @@ top: 0;
   display: block;
 }
 footer{
-  
+
   height: 150px;
   background-color: #303030;
 }
@@ -96,4 +96,20 @@ footer li {
   display: inline;
   margin-left: 150px;
   color: #9c9a9a;
+}
+@media (max-width:1050px) {
+  footer {
+    height: 200px;
+  }
+  footer li {
+    display: block;
+    padding: 10px 0 20px 0;
+  }
+
+}
+@media (max-width: 920px) {
+  .navbar ul li {
+    display: block;
+  }
+
 }

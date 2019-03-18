@@ -131,3 +131,11 @@ section h1 {
   80% {margin-left: -2184px;}
   90% {margin-left: -2184px;}
 }
+@media (max-width:900px) {
+  .side {
+    grid-template-columns: 100%;
+  }
+  .lister {
+    margin: auto;
+  }
+}

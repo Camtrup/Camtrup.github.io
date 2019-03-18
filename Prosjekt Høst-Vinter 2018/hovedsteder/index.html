@@ -176,7 +176,36 @@
             <p>Disney lanserte en teaser trailer til en live action-verson av den 20-år gamle tegnefilmen, og den vekker nostalgien til flere generasjoner. <a href="donk.html">Les mer...</a></p>
         </div>
 
-      </div>
+
+          <section>
+              <h3>Abonner Til Vårt Nyhetsbrev!</h3>
+                <form id="skjema">
+                    <input id="inpNavn" type="text" required placeholder="Navn">
+                    <input id="inpTelefon" type="text" required placeholder="Telefon">
+                    <input id="inpEpost" type="text" required placeholder="Epost">
+                    <button type="submit">Registrer kontakt</button>
+                </form>
+            </section>
+            <section id="secKontakter">
+            </section>
+
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyAlVCTqgzlxk2qW-67DdyClwI-rspFIfTs",
+            authDomain: "database-96472.firebaseapp.com",
+            databaseURL: "https://database-96472.firebaseio.com",
+            projectId: "database-96472",
+            storageBucket: "",
+            messagingSenderId: "242671022007"
+          };
+          firebase.initializeApp(config);
+        </script>
+        <script src="main.js"></script>
+
 
     </main>
     <footer>
