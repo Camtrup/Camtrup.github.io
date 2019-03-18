@@ -1,0 +1,49 @@
+
+/*Globalt*/
+body {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-left: 30px;
+}
+nav {
+  display: flex;
+  border-bottom: 3px black solid;
+}
+nav p {
+  margin-left: 100px;
+}
+nav a {
+  text-decoration: none;
+  color: orange;
+  text-transform: uppercase;
+}
+
+/*Sider i serier-mappen*/
+.serier_grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr)
+}
+.serier_grid img {
+  height: 290px;
+  width:200px;
+}
+
+/*Kanaler.html*/
+.kanaler_grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 390px 390px 390px;
+  grid-column-gap: 25px;
+  grid-row-gap: 40px;
+}
+.kanaler_grid img {
+  height: 200px;
+  width: 400px;
+}
+main .kanaler img:hover{
+  opacity: 0.4;
+}
+main .kanaler img {
+  transition: 0.2s;
+}

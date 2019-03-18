@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB2t09W03lsbRhg4Fw3W8YGDonDzlLud6k",
+        authDomain: "nettbutikk-28465.firebaseapp.com",
+        databaseURL: "https://nettbutikk-28465.firebaseio.com",
+        projectId: "nettbutikk-28465",
+        storageBucket: "",
+        messagingSenderId: "963226998157"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <link rel="stylesheet" href="../css/master.css">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../bilder/logo.jpg">
+    <title>CAM Serier</title>
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../hovedsteder/index.html"><img src="../bilder/logo.jpg" alt="Logo"></a>
+        <a href="../hovedsteder/index.html"><p>Hjem</p></a>
+        <a href="../hovedsteder/kanaler.html"><p>Kanaler</p></a>
+        <a href="../hovedsteder/favoritter.html"><p>Favoritter</p></a>
+      </nav>
+    </header>
+
+    <main class="kanaler_grid">
+
+    </main>
+
+    <script type="text/javascript">                 
+    const main = document.querySelector("main");
+    const article = document.querySelector("article");
+
+    const db = firebase.database();
+    const serier = db.ref("serier")
+    const kanaler = db.ref("Kanaler")
+
+
+    function genererKanaler(snapshot){
+        let kanaler = snapshot.val();
+        main.innerHTML +=`
+            <div class="kanaler">
+                <a href="../kanaler/${kanaler.ID}.html"><img src="../bilder/${kanaler.Bilde}"></a>
+            </div>
+        `};
+
+        function visKanaler(){
+          main.innerHTML=""
+          kanaler.on("child_added", genererKanaler)
+
+        }
+
+        visKanaler();
+    </script>
+  </body>
+</html>
