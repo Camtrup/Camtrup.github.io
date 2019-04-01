@@ -26,13 +26,286 @@
   <body>
     <header>
       <nav>
-        <a href="../hovedsteder/index.html"><img src="../bilder/logo.jpg" alt="Logo"></a>
-        <a href="../hovedsteder/index.html"><p>Hjem</p></a>
-        <a href="../hovedsteder/kanaler.html"><p>Kanaler</p></a>
-        <a href="../hovedsteder/favoritter.html"><p>Favoritter</p></a>
+        <ul class="navbar">
+          <li><a href="../hovedsteder/index.html"><img src="../bilder/logo.jpg" alt="Logo"></a></li>
+          <li><a href="../hovedsteder/index.html"><p>Hjem</p></a></li>
+          <li><a href="../hovedsteder/kanaler.html"><p>Kanaler</p></a></li>
+          <li><a href="../hovedsteder/favoritter.html"><p>Favoritter</p></a></li>
+        </ul>
       </nav>
     </header>
 
-    <script src="../script/main.js"></script>
+    <select onchange="kanal(this)" id="kanaler_grid">
+      <option>Sorter</option>
+      <option value="1">Amazon</option>
+      <option value="2">AMC</option>
+      <option value="3">Netflix</option>
+      <option value="4">Showtime</option>
+      <option value="5">HBO</option>
+    </select>
+
+    <select onchange="kategori(this)" id="kategori">
+      <option>Kategori</option>
+      <option value="1">Drama</option>
+      <option value="2">Krim</option>
+      <option value="3">Action</option>
+      <option value="4">Sci-Fi</option>
+      <option value="5">Komedie</option>
+      <option value="6">Eventyr</option>
+      <option value="7">Romanse</option>
+      <option value="8">Talk-Show</option>
+    </select>
+
+    <select onchange="annet(this)" id="annet">
+      <option>Sorter</option>
+      <option value="1">Navn</option>
+      <option value="2">Rating</option>
+      <option value="3">År</option>
+    </select>
+
+    <main class="serier_grid">
+
+    </main>
+
+    <script>
+    const main = document.querySelector("main");
+
+    const db = firebase.database();
+    const serier = db.ref("serier");
+
+
+    function visSerier(snapshot){
+        let serier = snapshot.val();
+        let key = snapshot.key;
+        main.innerHTML +=`
+            <div class="serier">
+                <a href="../serier/serie.html?id=${key}">
+                <img src=${serier.Bilde}>
+                <p class="imdb">${serier.Rating}</p>
+                <p class="sjanger">Sjanger: ${serier.Sjanger1}  ${serier.Sjanger2}</p>
+                </a>
+
+            </div>
+        `};
+
+        function annet(selectObject){
+          var verd = selectObject.value;
+
+          if (verd==="1") {
+            sorterNavn();
+          }
+          else if (verd==="2") {
+            sorterRating();
+          }
+          else if (verd==="3") {
+            sorterAr();
+          }
+        }
+
+        function kanal(selectObject){
+          var verdi = selectObject.value;
+
+            if (verdi==="1") {
+              kunAmazon();
+            }
+            else if (verdi==="2") {
+              kunAMC();
+            }
+            else if (verdi==="3") {
+              kunNetflix();
+            }
+            else if (verdi==="4") {
+              kunShowtime();
+            }
+            else if (verdi==="5") {
+              kunHBO();
+            }
+        }
+
+        function kategori(selectObject){
+          var value = selectObject.value;
+
+            if (value === "1") {
+              kunDrama();
+            }
+
+            else if (value==="2") {
+              kunKrim()
+            }
+            else if (value==="3") {
+              kunAction()
+            }
+            else if (value==="4") {
+              kunScifi()
+            }
+            else if (value==="5") {
+              kunKomedie()
+            }
+            else if (value==="6") {
+              kunEventyr()
+            }
+            else if (value==="7") {
+              kunRomanse()
+            }
+            else if (value==="8") {
+              kunTalkshow()
+            }
+
+        }
+
+        function kunDrama(){
+          main.innerHTML=""
+          serier
+            .orderByChild("Sjanger1")
+            .equalTo("Drama")
+            .on("child_added", visSerier)
+
+          serier
+            .orderByChild("Sjanger2")
+            .equalTo("Drama")
+            .on("child_added", visSerier)
+          }
+
+        function kunKrim(){
+          main.innerHTML=""
+          serier
+            .orderByChild("Sjanger1")
+            .equalTo("Krim")
+            .on("child_added", visSerier)
+          serier
+            .orderByChild("Sjanger2")
+            .equalTo("Krim")
+            .on("child_added", visSerier)
+          }
+
+        function kunScifi(){
+          main.innerHTML=""
+          serier
+            .orderByChild("Sjanger1")
+            .equalTo("Sci-Fi")
+            .on("child_added", visSerier)
+          serier
+            .orderByChild("Sjanger2")
+            .equalTo("Sci-Fi")
+            .on("child_added", visSerier)
+          }
+
+        function kunKomedie(){
+          main.innerHTML=""
+          serier
+            .orderByChild("Sjanger1")
+            .equalTo("Komedie")
+            .on("child_added", visSerier)
+          serier
+            .orderByChild("Sjanger2")
+            .equalTo("Komedie")
+            .on("child_added", visSerier)
+          }
+
+        function kunEventyr(){
+          main.innerHTML=""
+          serier
+            .orderByChild("Sjanger1")
+            .equalTo("Eventyr")
+            .on("child_added", visSerier)
+          serier
+            .orderByChild("Sjanger2")
+            .equalTo("Eventyr")
+            .on("child_added", visSerier)
+          }
+
+        function kunRomanse(){
+          main.innerHTML=""
+          serier
+            .orderByChild("Sjanger1")
+            .equalTo("Romanse")
+            .on("child_added", visSerier)
+          serier
+            .orderByChild("Sjanger2")
+            .equalTo("Romanse")
+            .on("child_added", visSerier)
+            }
+
+        function kunTalkshow(){
+          main.innerHTML=""
+          serier
+            .orderByChild("Sjanger1")
+            .equalTo("Talk-Show")
+            .on("child_added", visSerier)
+          serier
+            .orderByChild("Sjanger2")
+            .equalTo("Talk-Show")
+            .on("child_added", visSerier)
+          }
+
+        function visAlle(){
+          main.innerHTML=""
+          serier.on("child_added",visSerier);
+          }
+
+        function sorterRating(){
+          main.innerHTML=""
+          serier
+            .orderByChild("Rating")
+            .on("child_added", visSerier)
+        }
+
+        function sorterAr(){
+          main.innerHTML=""
+          serier
+            .orderByChild("År")
+            .on("child_added", visSerier)
+        }
+
+        function sorterNavn(){
+          main.innerHTML=""
+          serier
+              .orderByChild("Tittel")
+              .on("child_added", visSerier)
+        }
+
+        function kunHBO(){
+          main.innerHTML=""
+          serier
+            .orderByChild("Kanal")
+            .equalTo("HBO")
+            .on("child_added", visSerier)
+            }
+
+        function kunAMC(){
+          main.innerHTML=""
+          serier
+            .orderByChild("kanal")
+            .equalTo("AMC")
+            .on("child_added", visSerier)
+            }
+
+        function kunShowtime(){
+          main.innerHTML=""
+          serier
+            .orderByChild("kanal")
+            .equalTo("Showtime")
+            .on("child_added", visSerier)
+            }
+
+        function kunNetflix(){
+          main.innerHTML=""
+          serier
+            .orderByChild("kanal")
+            .equalTo("Netflix")
+            .on("child_added", visSerier)
+            }
+
+        function kunAmazon(){
+          main.innerHTML=""
+          serier
+            .orderByChild("kanal")
+            .equalTo("Amazon")
+            .on("child_added", visSerier)
+            }
+            kunNetflix();
+
+    </script>
+
   </body>
 </html>

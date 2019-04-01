@@ -6,40 +6,51 @@ body {
   line-height: 1.5;
   margin-left: 30px;
 }
-nav {
-  display: flex;
-  border-bottom: 3px black solid;
+
+.navbar  {
+  display: grid;
+  grid-template-columns: 100px 43px 70px 100px;
+  grid-template-rows: 22px;
+  grid-column-gap: 75px;
 }
-nav p {
-  margin-left: 100px;
-}
-nav a {
+.navbar li a {
   text-decoration: none;
-  color: orange;
+  color: black;
   text-transform: uppercase;
+
+}
+.navbar li {
+  list-style: none;
+}
+ header {
+   padding-bottom: 50px;
+  border-bottom: solid black 3px;
+}
+.serier a{
+  text-decoration: none;
+  color: black;
 }
 
-/*Sider i serier-mappen*/
-.serier_grid{
+
+/*Sider i de forskjellige kanal-sidene*/
+
+.serier_grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr)
 }
-.serier_grid img {
-  height: 290px;
-  width:200px;
-}
+
 
 /*Kanaler.html*/
 .kanaler_grid {
   margin-top: 60px;
   display: grid;
-  grid-template-columns: 390px 390px 390px;
-  grid-column-gap: 25px;
-  grid-row-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 100px;
+  grid-row-gap: 100px;
 }
 .kanaler_grid img {
-  height: 200px;
-  width: 400px;
+  height: 170px;
+  width: 290px;
 }
 main .kanaler img:hover{
   opacity: 0.4;

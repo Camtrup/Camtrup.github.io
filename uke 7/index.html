@@ -42,12 +42,15 @@
             function visVare(snapshot){
                 //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
                 let pokemon = snapshot.val();
+                let key = snapshot.key;
+
                 main.innerHTML +=`
                     <article class="pokemon">
                         <h1>${pokemon.Name}</h1>
                         <img src=${pokemon.ImageURL}>
                         <h2>MaxCP:${pokemon.MaxCP} - MaxHP:${pokemon.MaxHP}</h2>
                         <p>Type: ${pokemon.Type1}, ${pokemon.Type2}
+                        <a href="pokestats.html?id=${key}">Detaljer</a>
 
                     </article>
                 `
@@ -93,9 +96,7 @@
             }
 
 
-
-
-
+visAlle();
 
 
         </script>

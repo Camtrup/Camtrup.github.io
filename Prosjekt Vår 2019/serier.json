@@ -1,490 +1,444 @@
 {
-  "kategorier": {
-    
-  },
-  "serier": {
-
-    "1": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
+  "Kanaler" : {
+    "amazon" : {
+      "Bilde" : "amazon.png",
+      "ID" : "Amazon"
     },
-
-    "2": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
+    "amc" : {
+      "Bilde" : "amc.png",
+      "ID" : "AMC"
     },
-
-    "3": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
+    "hbo" : {
+      "Bilde" : "hbo.png",
+      "ID" : "HBO"
     },
-
-    "4": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
+    "netflix" : {
+      "Bilde" : "netflix.png",
+      "ID" : "Netflix"
     },
-
-    "5": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "6": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "7": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "8": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "9": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "10": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "11": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "12": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "13": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "14": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "15": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "16": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "17": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "18": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "19": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "20": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "21": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "22": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "23": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "24": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "25": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "26": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "27": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "28": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "29": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
-    },
-
-    "30": {
-      "Tittel":"",
-      "Rating":"",
-      "År":"",
-      "Sjanger1":"",
-      "Sjanger2":"",
-      "Sesonger":"",
-      "Regissør":"",
-      "Skuespillere": {
-        "1":"",
-        "2":"",
-        "3":""
-      },
-      "Bilde":""
+    "showtime" : {
+      "Bilde" : "showtime.png",
+      "ID" : "Showtime"
     }
-
-
-
+  },
+  "serier" : {
+    "billions" : {
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BMTU1NjM5NjEzMF5BMl5BanBnXkFtZTgwMjE3NzU0NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "ID" : "billions",
+      "Rating" : "8.4",
+      "Regissør" : "Brian Koppelman",
+      "Sesonger" : "4",
+      "Sjanger1" : "Drama",
+      "Sjanger2" : "",
+      "Skuespillere" : [ null, "Paul Giamatti", "Damian Lewis", "Maggie Siff" ],
+      "Tittel" : "Billions",
+      "kanal" : "Showtime",
+      "trailer" : "https://www.youtube.com/watch/v/raEUMLL-ZI",
+      "År" : "2016"
+    },
+    "blackmirror" : {
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BNTEwYzNiMGUtNzRlYS00MTMzLTliNzgtOGUxZGZiNThlNWYwXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "ID" : "blackmirror",
+      "Rating" : "8.9",
+      "Regissør" : "Charlie Brooker",
+      "Sesonger" : "5",
+      "Sjanger1" : "Drama",
+      "Sjanger2" : "Sci-Fi",
+      "Skuespillere" : [ null, "Daniel Lapaine", "Hannah John-Kamen", "Michaela Coel" ],
+      "Tittel" : "Black Mirror",
+      "kanal" : "Netflix",
+      "trailer" : "https://www.youtube.com/v/jDiYGjp5iFg",
+      "År" : "2011"
+    },
+    "breakingbad" : {
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BMjhiMzgxZTctNDc1Ni00OTIxLTlhMTYtZTA3ZWFkODRkNmE2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR5,0,182,268_AL_.jpg",
+      "ID" : "atten",
+      "Rating" : "9.5",
+      "Regissør" : "Vince Gilligan",
+      "Sesonger" : "5",
+      "Sjanger1" : "Krim",
+      "Sjanger2" : "Drama",
+      "Skuespillere" : [ null, "Bryan Cranston", "Aaron paul", "Anna Gunn" ],
+      "Tittel" : "Breaking Bad",
+      "kanal" : "AMC",
+      "trailer" : "https://www.youtube.com/v/HhesaQXLuRY",
+      "År" : "2008"
+    },
+    "friends" : {
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY268_CR0,0,182,268_AL_.jpg",
+      "ID" : "friends",
+      "Rating" : "8.9",
+      "Regissør" : "David Crane",
+      "Sesonger" : "10",
+      "Sjanger1" : "Komedie",
+      "Sjanger2" : "Romanse",
+      "Skuespillere" : [ null, "Jennifer Aniston", "Courteney Cox", "Lisa Kudrow" ],
+      "Tittel" : "Friends",
+      "kanal" : "Netflix",
+      "trailer" : "https://www.youtube.com/v/SHvzX2pl2ec",
+      "År" : "1994"
+    },
+    "gameofthrones" : {
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BMjAyNjc3NTAxMV5BMl5BanBnXkFtZTgwNTEzNTM1NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "ID" : "gameofthrones",
+      "Rating" : "9.5",
+      "Regissør" : "David Benioff",
+      "Sesonger" : "8",
+      "Sjanger1" : "Drama",
+      "Sjanger2" : "Eventyr",
+      "Skuespillere" : [ null, "Emilia Clarke", "Kit Harrington", "Peter Dinklage" ],
+      "Tittel" : "Game Of Thrones",
+      "kanal" : "HBO",
+      "trailer" : "https://www.youtube.com/v/BpJYNVhGf1s",
+      "År" : "2011"
+    },
+    "jackryan" : {
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BMjIzMDcyMDcxOV5BMl5BanBnXkFtZTgwMTg1NDk2NTM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "ID" : "jackryan",
+      "Rating" : "8.2",
+      "Regissør" : "Graham Roland",
+      "Sesonger" : "3",
+      "Sjanger1" : "Action",
+      "Sjanger2" : "Drama",
+      "Skuespillere" : [ null, "John Krasinski", "Wendell Pierce", "John Hoogenakker" ],
+      "Tittel" : "Tom Clancy's Jack Ryan",
+      "kanal" : "Amazon",
+      "trailer" : "https://www.youtube.com/v/1KsyZF590NM",
+      "År" : "2018"
+    },
+    "madmen" : {
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BMjMwNzk5Nzg2OV5BMl5BanBnXkFtZTgwMjg1OTk1NDE@._V1_UY268_CR1,0,182,268_AL_.jpg",
+      "ID" : "madmen",
+      "Rating" : "8.6",
+      "Regissør" : "Mattew Weiner",
+      "Sesonger" : "7",
+      "Sjanger1" : "Drama",
+      "Sjanger2" : "",
+      "Skuespillere" : [ null, "Jon Hamm", "Elisabeth Moss", "Vincent Kartheiser" ],
+      "Tittel" : "Mad Men",
+      "kanal" : "AMC",
+      "trailer" : "https://www.youtube.com/v/LfuMhXcLa-Q",
+      "År" : "2007"
+    },
+    "rickandmorty" : {
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BMjRiNDRhNGUtMzRkZi00MThlLTg0ZDMtNjc5YzFjYmFjMmM4XkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_UY268_CR2,0,182,268_AL_.jpg",
+      "ID" : "rickandmorty",
+      "Rating" : "9.3",
+      "Regissør" : "Dan Harmon",
+      "Sesonger" : "4",
+      "Sjanger1" : "Eventyr",
+      "Sjanger2" : "Komedie",
+      "Skuespillere" : [ null, "Justin Roiland", "Chris Parnell", "Spencer Grammer" ],
+      "Tittel" : "Rick And Morty",
+      "kanal" : "Starburns Industries",
+      "trailer" : "https://www.youtube.com/v/WNhH00OIPP0",
+      "År" : "2013"
+    },
+    "thegrandtour" : {
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BYjkyOWIyZGYtYzU3ZS00NWM2LThjZGEtMDZjZjg2MTI2NzBhXkEyXkFqcGdeQXVyNjI4OTg2Njg@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "ID" : "thegrandtour",
+      "Rating" : "8.7",
+      "Regissør" : "Phil Churchward",
+      "Sesonger" : "4",
+      "Sjanger1" : "Komedie",
+      "Sjanger2" : "Talk-Show",
+      "Skuespillere" : [ null, "Jeremy Clarkson", "Richard Hammond", "James MV5BMTI3ODc2ODc0M15BMl5BanBnXkFtZTYwMjgzNjc3" ],
+      "Tittel" : "The Grand Tour",
+      "kanal" : "Amazon",
+      "trailer" : "https://www.youtube.com/v/kLtpcxtk4HI",
+      "År" : "2016"
+    },
+    "themaninthehighcastle" : {
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BMjY5NTI4NzEwN15BMl5BanBnXkFtZTgwODg1NTY0NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "ID" : "themaninthehighcastle",
+      "Rating" : "8.1",
+      "Regissør" : "Frank Spotnitz",
+      "Sesonger" : "4",
+      "Sjanger1" : "Drama",
+      "Sjanger2" : "Sci-Fi",
+      "Skuespillere" : [ null, "Alexa Davalos", "Luke Kleintank", "Rufus Sewell" ],
+      "Tittel" : "The Man In The High Castle",
+      "kanal" : "Amazon",
+      "År" : "2015"
+    },
+    "thesopranos" : {
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BZGJjYzhjYTYtMDBjYy00OWU1LTg5OTYtNmYwOTZmZjE3ZDdhXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY268_CR3,0,182,268_AL_.jpg",
+      "ID" : "thesopranos",
+      "Rating" : "9.2",
+      "Regissør" : "David Chase",
+      "Sesonger" : "6",
+      "Sjanger1" : "Krim",
+      "Sjanger2" : "Drama",
+      "Skuespillere" : [ null, "James Gandolfini", "Lorraine Bracco", "Edie Falco" ],
+      "Tittel" : "The Sopranos",
+      "kanal" : "HBO",
+      "trailer" : "https://www.youtube.com/v/u9qpFgAa52U",
+      "År" : "1999"
+    },
+    "thewalkingdead" : {
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BNDM2OTA1NzIzMV5BMl5BanBnXkFtZTgwOTkxMTk5NjM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "ID" : "seks",
+      "Rating" : "8.3",
+      "Regissør" : "Frank Darabont",
+      "Sesonger" : "10",
+      "Sjanger1" : "Drama",
+      "Sjanger2" : "Sci-Fi",
+      "Skuespillere" : [ null, "Andrew Lincoln", "Norman Reedus", "Melissa McBride" ],
+      "Tittel" : "The Walking Dead",
+      "kanal" : "AMC",
+      "trailer" : "https://www.youtube.com/v/R1v0uFms68U",
+      "År" : "2010"
+    },
+    "thewire" : {
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BNjc1NzYwODEyMV5BMl5BanBnXkFtZTcwNTcxMzU1MQ@@._V1_UY268_CR7,0,182,268_AL_.jpg",
+      "ID" : "thewire",
+      "Rating" : "9.3",
+      "Regissør" : "David Simon",
+      "Sesonger" : "5",
+      "Sjanger1" : "Krim",
+      "Sjanger2" : "Drama",
+      "Skuespillere" : [ null, "Dominic West", "Lance Reddick", "Sonja Sohn" ],
+      "Tittel" : "The Wire",
+      "kanal" : "HBO",
+      "trailer" : "https://www.youtube.com/v/9qK-VGjMr8g",
+      "År" : "2002"
+    },
+    "seinfeld" : {
+      "trailer":"https://www.youtube.com/v/AKI_q6MsTxM",
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BZjZjMzQ2ZmUtZWEyZC00NWJiLWFjM2UtMzhmYzZmZDcxMzllXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY268_CR3,0,182,268_AL_.jpg",
+      "ID" : "seinfeld",
+      "Rating" : "8.9",
+      "Regissør" : "Larry David",
+      "Sesonger" : "9",
+      "Sjanger1" : "Komedie",
+      "Sjanger2" : "",
+      "Skuespillere" : [ null, "Jerry Seinfeld", "Julia Louis-Dreyfus", "Michael Richards" ],
+      "Tittel" : "Seinfeld",
+      "kanal" : "Netflix",
+      "År" : "1989"
+    },
+    "strangerthings" : {
+      "trailer":"https://www.youtube.com/v/Bb4uR9gTVXI",
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BMTgwNDAxNTQ4Ml5BMl5BanBnXkFtZTgwOTAyMjQ2NzM@._V1_UY268_CR3,0,182,268_AL_.jpg",
+      "ID" : "strangerthings",
+      "Rating" : "8.9",
+      "Regissør" : "Matt Duffer",
+      "Sesonger" : "3",
+      "Sjanger1" : "Drama",
+      "Sjanger2" : "Fantasy",
+      "Skuespillere" : [ null, "Millie Bobby Brown", "Finn Wolfhard", "Winona Ryder" ],
+      "Tittel" : "Stanger Things",
+      "kanal" : "Netflix",
+      "År" : "2016"
+    },
+    "twinpeaks" : {
+      "trailer":"https://www.youtube.com/v/Zwn9ou_nf-I",
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BMTExNzk2NjcxNTNeQTJeQWpwZ15BbWU4MDcxOTczOTIx._V1_UY268_CR13,0,182,268_AL_.jpg",
+      "ID" : "twinpeaks",
+      "Rating" : "8.8",
+      "Regissør" : "Mark Frost",
+      "Sesonger" : "2",
+      "Sjanger1" : "Krim",
+      "Sjanger2" : "Drama",
+      "Skuespillere" : [ null, "Kyle MacLachlan", "Michael Ontkean", "Mädchen Amick" ],
+      "Tittel" : "Twin Peaks",
+      "kanal" : "HBO",
+      "År" : "1990"
+    },
+    "narcos" : {
+      "trailer":"https://www.youtube.com/v/FJ7B3qbj-5s",
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BNmFjODU3YzgtMGUwNC00ZGI3LWFkZjQtMjkxZDc3NmQ1MzcyXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "ID" : "narcos",
+      "Rating" : "8.8",
+      "Regissør" : "Carlo Bernard",
+      "Sesonger" : "3",
+      "Sjanger1" : "Krim",
+      "Sjanger2" : "Drama",
+      "Skuespillere" : [ null, "Pedro Pascal", "Wagner Moura", "Boyd Holbrook" ],
+      "Tittel" : "Narcos",
+      "kanal" : "Netflix",
+      "År" : "2015"
+    },
+    "houseofcards" : {
+      "trailer":"https://www.youtube.com/v/ULwUzF1q5w4",
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BODM1MDU2NjY5NF5BMl5BanBnXkFtZTgwMDkxNTcwNjM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "ID" : "houseofcards",
+      "Rating" : "8.8",
+      "Regissør" : "Beau Willimon",
+      "Sesonger" : "6",
+      "Sjanger1" : "Drama",
+      "Sjanger2" : "",
+      "Skuespillere" : [ null, "Kevin Spacey", "Michel Gill", "Robin Wright" ],
+      "Tittel" : "House Of Cards",
+      "kanal" : "Netflix",
+      "År" : "2013"
+    },
+    "theoffice" : {
+      "trailer":"https://www.youtube.com/v/LHOtME2DL4g",
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BMTgzNjAzMDE0NF5BMl5BanBnXkFtZTcwNTEyMzM3OA@@._V1_UY268_CR7,0,182,268_AL_.jpg",
+      "ID" : "theoffice",
+      "Rating" : "8.8",
+      "Regissør" : "Ricky Gervais",
+      "Sesonger" : "9",
+      "Sjanger1" : "Komedie",
+      "Sjanger2" : "",
+      "Skuespillere" : [ null, "Steve Carell", "Jenna Fischer", "John Krasinski" ],
+      "Tittel" : "The Office",
+      "kanal" : "HBO",
+      "År" : "2005"
+    },
+    "westworld" : {
+      "trailer":"https://www.youtube.com/v/rNkLizsDAAE",
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BNThjM2Y3MDUtYTIyNC00ZDliLWJlMmItNWY1N2E5NjhmMGM4XkEyXkFqcGdeQXVyNjU2ODM5MjU@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "ID" : "westworld",
+      "Rating" : "8.8",
+      "Regissør" : "Frederick E.O. Toye",
+      "Sesonger" : "3",
+      "Sjanger1" : "Drama",
+      "Sjanger2" : "Sci-Fi",
+      "Skuespillere" : [ null, "Evan Rachel Wood", "Jeffrey Wright", "Ed Harris" ],
+      "Tittel" : "Westworld",
+      "kanal" : "HBO",
+      "År" : "2016"
+    },
+    "peakyblinders" : {
+      "trailer":"https://www.youtube.com/v/oVzVdvGIC7U",
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BMTkzNjEzMDEzMF5BMl5BanBnXkFtZTgwMDI0MjE4MjE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "ID" : "peakyblinders",
+      "Rating" : "8.8",
+      "Regissør" : "Steven Knight",
+      "Sesonger" : "5",
+      "Sjanger1" : "Krim",
+      "Sjanger2" : "Drama",
+      "Skuespillere" : [ null, "Cillioan Murphy", "Helen McCrory", "Paul Anderson" ],
+      "Tittel" : "Peaky Blinders",
+      "kanal" : "Netflix",
+      "År" : "2013"
+    },
+    "rome" : {
+      "trailer":"https://www.youtube.com/v/2s1RoX1OeC0",
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BZTM4NjBkMWEtZDA4My00MzA0LWI0ZWMtNzUwYWVhOThiMTgwXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY268_CR11,0,182,268_AL_.jpg",
+      "ID" : "rome",
+      "Rating" : "8.8",
+      "Regissør" : "Bruno Heller",
+      "Sesonger" : "2",
+      "Sjanger1" : "Action",
+      "Sjanger2" : "Drama",
+      "Skuespillere" : [ null, "Kevin McKidd", "Ray Stevenson", "Polly Walker" ],
+      "Tittel" : "Rome",
+      "kanal" : "HBO",
+      "År" : "2005"
+    },
+    "thesimpsons" : {
+      "trailer":"https://www.youtube.com/v/jfVBrpIhH60",
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BYjFkMTlkYWUtZWFhNy00M2FmLThiOTYtYTRiYjVlZWYxNmJkXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "ID" : "thesimpsons",
+      "Rating" : "8.7",
+      "Regissør" : "James L. Brooks",
+      "Sesonger" : "32",
+      "Sjanger1" : "Animasjon",
+      "Sjanger2" : "Komedie",
+      "Skuespillere" : [ null, "Dan Castellaneta", "Nancy Cartwright", "Harry Shearer" ],
+      "Tittel" : "The Simpsons",
+      "kanal" : "",
+      "År" : "1989"
+    },
+    "house" : {
+      "trailer":"https://www.youtube.com/v/MczMB8nU1sY",
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BMDA4NjQzN2ItZDhhNC00ZjVlLWFjNTgtMTEyNDQyOGNjMDE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY268_CR0,0,182,268_AL_.jpg",
+      "ID" : "house",
+      "Rating" : "8.7",
+      "Regissør" : "David Shore",
+      "Sesonger" : "8",
+      "Sjanger1" : "Drama",
+      "Sjanger2" : "Komedie",
+      "Skuespillere" : [ null, "Hugh Laurie", "Omar Epps", "Robert Sean Leonard" ],
+      "Tittel" : "House",
+      "kanal" : "Netflix",
+      "År" : "2004"
+    },
+    "bandofbrothers" : {
+      "trailer":"https://www.youtube.com/v/kyDkHvi9yeI",
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BMTI3ODc2ODc0M15BMl5BanBnXkFtZTYwMjgzNjc3._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "ID" : "bandofbrothers",
+      "Rating" : "9.5",
+      "Regissør" : "Phil Alden Robinson",
+      "Sesonger" : "1",
+      "Sjanger1" : "Action",
+      "Sjanger2" : "Drama",
+      "Skuespillere" : [ null, "Scott Grimes", "Damian Lewis", "Ron Livingston" ],
+      "Tittel" : "Band Of Brothers",
+      "kanal" : "HBO",
+      "År" : "2001"
+    },
+    "topgear" : {
+      "trailer":"https://www.youtube.com/v/4-NI7Kp82EA",
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BYzkwZDgwZmQtOWE4Yy00ZjgyLTgxZTYtZTRiMTg5MWY4NTFiXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY268_CR3,0,182,268_AL_.jpg",
+      "ID" : "topgear",
+      "Rating" : "8.7",
+      "Regissør" : "Lisa Clark",
+      "Sesonger" : "27",
+      "Sjanger1" : "Komedie",
+      "Sjanger2" : "Talk-Show",
+      "Skuespillere" : [ null, "Jeremy Clarkson", "Richard Hammond", "James May" ],
+      "Tittel" : "Top Gear",
+      "kanal" : "",
+      "År" : "2002"
+    },
+    "downtonabbey" : {
+      "trailer":"https://www.youtube.com/watch?v=EOM3y4P8TEM",
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BY2U1NmIwYzgtNjFkOS00YWUxLTg0YTMtZmE5NTA3YjRmY2NlXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY268_CR3,0,182,268_AL_.jpg",
+      "ID" : "downtonabbey",
+      "Rating" : "8.7",
+      "Regissør" : "Julian Fellowes",
+      "Sesonger" : "6",
+      "Sjanger1" : "Drama",
+      "Sjanger2" : "Romanse",
+      "Skuespillere" : [ null, "Hugh Bonneville", "Phyllis Logan", "Elizabeth McGovern" ],
+      "Tittel" : "Downton Abbey",
+      "kanal" : "Netflix",
+      "År" : "2010"
+    },
+    "dexter" : {
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BMTM5MjkwMTI0MV5BMl5BanBnXkFtZTcwODQwMTc0OQ@@._V1_UY268_CR7,0,182,268_AL_.jpg",
+      "ID" : "dexter",
+      "Rating" : "8.7",
+      "Regissør" : "James Manos Jr.",
+      "Sesonger" : "8",
+      "Sjanger1" : "Krim",
+      "Sjanger2" : "Drama",
+      "Skuespillere" : [ null, "Michael C. Hall", "Jennifer Carpenter", "David Zayas" ],
+      "Tittel" : "Dexter",
+      "kanal" : "Showtime",
+      "År" : "2006"
+    },
+    "truedetective" : {
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BMTY0ODc2NTc0NF5BMl5BanBnXkFtZTgwMDcyNTAwNzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "ID" : "truedetective",
+      "Rating" : "9.0",
+      "Regissør" : "Nic Pizzolatto",
+      "Sesonger" : "3",
+      "Sjanger1" : "Krim",
+      "Sjanger2" : "Drama",
+      "Skuespillere" : [ null, "Vince Vaughn", "Colin Farrell", "Rachel McAdams" ],
+      "Tittel" : "True Detective",
+      "kanal" : "HBO",
+      "trailer" : "https://www.youtube.com/v/fVQUcaO4AvE",
+      "År" : "2014"
+    },
+    "bettercallsaul" : {
+      "trailer":"https://www.youtube.com/v/HN4oydykJFc",
+      "Bilde" : "https://m.media-amazon.com/images/M/MV5BMTAxOTQ0MjUzMzJeQTJeQWpwZ15BbWU4MDY0NTAxNzMx._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "ID" : "bettercallsaul",
+      "Rating" : "8.7",
+      "Regissør" : "Vince Gilligan",
+      "Sesonger" : "5",
+      "Sjanger1" : "Krim",
+      "Sjanger2" : "Drama",
+      "Skuespillere" : [ null, "Bob Odenkirk", "Rhea Seehorn", "Jonathan Banks" ],
+      "Tittel" : "Better Call Saul",
+      "kanal" : "Netflix",
+      "År" : "2015"
+    }
   }
 }

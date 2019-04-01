@@ -80,6 +80,7 @@
         main.innerHTML +=`
             <div class="serier">
                 <a href="../serier/serie.html?id=${key}">
+                <p class="tittel">${serier.Tittel}</p>
                 <img src=${serier.Bilde}>
                 <p class="imdb">${serier.Rating}</p>
                 <p class="sjanger">Sjanger: ${serier.Sjanger1}  ${serier.Sjanger2}</p>
@@ -303,7 +304,8 @@
             .equalTo("Amazon")
             .on("child_added", visSerier)
             }
-            kunShowtime();
+            visAlle()
+
     </script>
 
   </body>
