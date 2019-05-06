@@ -5,6 +5,7 @@ body {
   font-size: 15px;
   line-height: 1.5;
   margin-left: 30px;
+  background-color: #f4f4f4;
 }
 
 .navbar  {
@@ -17,7 +18,152 @@ body {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
+}
+@media(max-width:750px){
+  .navbar {
+    display:grid;
+    grid-template-columns: 500px;
+    grid-template-rows: 70px 50px 50px 50px;
 
+  }
+  header {
+    height: 190px;
+  }
+}
+@media(max-width:500px){
+
+  header {
+    height: 190px;
+  }
+}
+
+/*Index.html*/
+.grid-top-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.mySlides {
+  width:350px;
+  height: 622px;
+}
+.mySlides p {
+  font-size: 20px;
+  z-index: 99;
+  color: lightblue;
+  position: relative;
+  bottom:-590px;
+  left: 20%;
+}
+.mySlides .vis {
+  text-align: center;
+  width: 80px;
+  display: none;
+  color: white;
+  border: solid white 3px;
+  z-index: 99;
+  position:relative;
+  bottom: -340px;
+  left: 43%;
+}
+.mySlides a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+.mySlides a:hover {
+  opacity: 0.5
+}
+
+@media(max-width:750px){
+.vis {
+  display: block;
+}
+.navbar p {
+  text-align: center;
+}
+.mySlides p {
+  bottom: -490px;
+  left: 53%;
+}
+.mySlides .vis {
+  bottom:-250px;
+  left: 76%;
+}
+}
+
+.slideshow-container .fade:hover .vis{
+display: block;
+}
+.slideshow-container .fade img:hover{
+  filter:blur(5px);
+  -webkit-filter: blur(5px);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+@media(max-width:750px){
+.slideshow-container img {
+  height: 500px;
+  width: 300px;
+  margin-left: 150px;
+}
+
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+
+/* Underlinje som beveger seg i navbar */
+.navbar p {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.navbar p:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #2098D1;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.navbar p:hover:before, .navbar p:focus:before, .navbar p:active:before {
+  left: 0;
+  right: 0;
+}
+.navbar .current {
+  padding-bottom: 2px;
+  border-bottom: #2098D1 4.2px solid;
+}
+.navbar p{
+  margin-top: 20px;
 }
 .navbar li {
   list-style: none;
@@ -31,12 +177,49 @@ body {
   color: black;
 }
 
+select {
+  border: none;
+  margin: 20px 0 20px 0;
+  height: 10px;
+
+}
+
 
 /*Sider i de forskjellige kanal-sidene*/
 
 .serier_grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr)
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 25px;
+  margin-left: 30px;
+}
+
+@media(max-width:1000px){
+  .serier_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+  }
+  .serier a{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .serier {
+    background-color: lightgrey;
+  }
+}
+@media(max-width:800px){
+  .serier_grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr)
+  }
+  .serier a {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .serier{
+    border-bottom: solid black 3px;
+  }
+
 }
 
 
@@ -58,3 +241,93 @@ main .kanaler img:hover{
 main .kanaler img {
   transition: 0.2s;
 }
+@media(max-width:1100px){
+  .kanaler_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+@media(max-width:750px){
+  .kanaler_grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr)
+  }
+}
+@media(max-width:500px){
+  embed {
+    width: 350px;
+  }
+}
+
+
+/*Serier overlay*/
+@media(min-width:1000px){
+.serier {
+  position: relative;
+  width: 50%;
+}
+
+.serier img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.skuespillere {
+  display: none;
+}
+.ar {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: grey;
+}
+
+.serier:hover .overlay {
+  opacity: 1;
+}
+
+.textone {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.texttwo {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.textthree {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+}
+/*Slideshow*/

@@ -29,39 +29,41 @@
         <ul class="navbar">
           <li><a href="../hovedsteder/index.html"><img src="../bilder/logo.jpg" alt="Logo"></a></li>
           <li><a href="../hovedsteder/index.html"><p>Hjem</p></a></li>
-          <li><a href="../hovedsteder/kanaler.html"><p>Kanaler</p></a></li>
+          <li><a class="current" href="../hovedsteder/kanaler.html"><p>Kanaler</p></a></li>
           <li><a href="../hovedsteder/favoritter.html"><p>Favoritter</p></a></li>
         </ul>
       </nav>
     </header>
+    <div class="select">
+        <select onchange="kanal(this)" id="kanaler_grid">
+          <option value="6">Kanal</option>
+          <option value="1">Amazon</option>
+          <option value="2">AMC</option>
+          <option value="3">Netflix</option>
+          <option value="4">Showtime</option>
+          <option value="5">HBO</option>
+        </select>
 
-    <select onchange="kanal(this)" id="kanaler_grid">
-      <option>Sorter</option>
-      <option value="1">Amazon</option>
-      <option value="2">AMC</option>
-      <option value="3">Netflix</option>
-      <option value="4">Showtime</option>
-      <option value="5">HBO</option>
-    </select>
+        <select onchange="kategori(this)" id="kategori">
+          <option value="9">Kategori</option>
+          <option value="1">Drama</option>
+          <option value="2">Krim</option>
+          <option value="3">Action</option>
+          <option value="4">Sci-Fi</option>
+          <option value="5">Komedie</option>
+          <option value="6">Eventyr</option>
+          <option value="7">Romanse</option>
+          <option value="8">Talk-Show</option>
+        </select>
 
-    <select onchange="kategori(this)" id="kategori">
-      <option>Kategori</option>
-      <option value="1">Drama</option>
-      <option value="2">Krim</option>
-      <option value="3">Action</option>
-      <option value="4">Sci-Fi</option>
-      <option value="5">Komedie</option>
-      <option value="6">Eventyr</option>
-      <option value="7">Romanse</option>
-      <option value="8">Talk-Show</option>
-    </select>
-
-    <select onchange="annet(this)" id="annet">
-      <option>Sorter</option>
-      <option value="1">Navn</option>
-      <option value="2">Rating</option>
-      <option value="3">År</option>
-    </select>
+        <select onchange="annet(this)" id="annet">
+          <option value="4">Sorter</option>
+          <option value="1">Navn</option>
+          <option value="2">Rating</option>
+          <option value="3">År</option>
+        </select>
+        <button onclick="visAlle()" name="button">Vis Alle</button>
+      </div>
 
     <main class="serier_grid">
 
@@ -81,8 +83,13 @@
             <div class="serier">
                 <a href="../serier/serie.html?id=${key}">
                 <img src=${serier.Bilde}>
-                <p class="imdb">${serier.Rating}</p>
-                <p class="sjanger">Sjanger: ${serier.Sjanger1}  ${serier.Sjanger2}</p>
+                <div class="overlay">
+                  <p class="tittel textthree">${serier.Tittel}</p>
+                  <p class="imdb textone"><span style="font-size:100%;color:yellow;">&starf;</span>${serier.Rating}</p>
+                  <p class="sjanger texttwo">Sjanger: ${serier.Sjanger1}  ${serier.Sjanger2}</p>
+                  <p class="skuespillere">Skuespillere: ${serier.Skuespillere}</p>
+                  <p class="ar">År: ${serier.År}</p>
+                </div>
                 </a>
 
             </div>
@@ -99,6 +106,9 @@
           }
           else if (verd==="3") {
             sorterAr();
+          }
+          else if (verd==="4") {
+            visAlle();
           }
         }
 
@@ -119,6 +129,9 @@
             }
             else if (verdi==="5") {
               kunHBO();
+            }
+            else if (verdi==="6") {
+              visAlle();
             }
         }
 
@@ -149,6 +162,9 @@
             }
             else if (value==="8") {
               kunTalkshow()
+            }
+            else if (value==="9") {
+              visAlle();
             }
 
         }

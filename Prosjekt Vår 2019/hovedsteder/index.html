@@ -23,18 +23,145 @@
     <title>CAM Serier</title>
 
   </head>
-  <body>
+  <body class="body-index">
     <header>
       <nav>
         <ul class="navbar">
           <li><a href="../hovedsteder/index.html"><img src="../bilder/logo.jpg" alt="Logo"></a></li>
-          <li><a href="../hovedsteder/index.html"><p>Hjem</p></a></li>
+          <li><a class="current" href="../hovedsteder/index.html"><p>Hjem</p></a></li>
           <li><a href="../hovedsteder/kanaler.html"><p>Kanaler</p></a></li>
           <li><a href="../hovedsteder/favoritter.html"><p>Favoritter</p></a></li>
         </ul>
       </nav>
     </header>
+    <main class="index-main">
+    <!-- Slideshow container -->
+    <div clas="grid-top-index">
 
-    <script src="../script/main.js"></script>
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
+        <p>Følg Den Nye Sesongen</p>
+        <img src="../bilder/PS/arya.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
+        <p>Følg Den Nye Sesongen</p>
+        <img src="../bilder/PS/bran.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
+        <p>Følg Den Nye Sesongen</p>
+        <img src="../bilder/PS/brienne.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
+        <p>Følg Den Nye Sesongen</p>
+        <img src="../bilder/PS/cers.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
+        <p>Følg Den Nye Sesongen</p>
+        <img src="../bilder/PS/davos.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
+        <p>Følg Den Nye Sesongen</p>
+        <img src="../bilder/PS/euron.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
+        <p>Følg Den Nye Sesongen</p>
+        <img src="../bilder/PS/grey.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
+        <p>Følg Den Nye Sesongen</p>
+        <img src="../bilder/PS/hound.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
+        <p>Følg Den Nye Sesongen</p>
+        <img src="../bilder/PS/jaim.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
+        <p>Følg Den Nye Sesongen</p>
+        <img src="../bilder/PS/jonsnow.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
+        <p>Følg Den Nye Sesongen</p>
+        <img src="../bilder/PS/king.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
+        <p>Følg Den Nye Sesongen</p>
+        <img src="../bilder/PS/sam.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
+        <p>Følg Den Nye Sesongen</p>
+        <img src="../bilder/PS/sansa.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
+        <p>Følg Den Nye Sesongen</p>
+        <img src="../bilder/PS/targ.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
+        <p>Følg Den Nye Sesongen</p>
+        <img src="../bilder/PS/theon.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
+        <p>Følg Den Nye Sesongen</p>
+        <img src="../bilder/PS/tyrion.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
+        <p>Følg Den Nye Sesongen</p>
+        <img src="../bilder/PS/varys.jpg">
+      </div>
+
+
+    </main>
+    <script>
+
+        var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+    </script>
   </body>
 </html>

@@ -42,13 +42,13 @@
     <script>
       const main = document.querySelector("main")
 
-
       var url_string = window.location.href
       var url = new URL(url_string);
       var id = url.searchParams.get("id");
 
       const db = firebase.database();
       const serier = db.ref("serier/" + id)
+
 
       function visSerie(snapshot){
         let serier = snapshot.val();
@@ -60,11 +60,21 @@
               <img src="${serier.Bilde}">
               <embed width="420" height="268"
               src="${serier.trailer}">
+              <p class="rating">IMDB-Rating: ${serier.Rating}</p>
+              <p class="sjangere"> Sjangere: ${serier.Sjanger1} ${serier.Sjanger2}</p>
+              <P class="regissør"> Regissør: ${serier.Regissør}</p>
+              <p class="skuespillere">Skuespillere: ${serier.Skuespillere}</p>
+              <p class="sesonger">Sesonger: ${serier.Sesonger}</p>
+              <p class="kanal">Kanal: <a href="../kanaler/${serier.kanal}.html">${serier.kanal}</a></p>
+              <p class="ar">År: ${serier.År}</p>
+
 
             </article>
           `
+          //Kommer et komma før skuespillere, vet ikke hvorfor
           }
           serier.on("value", visSerie)
+
 
     </script>
   </body>
