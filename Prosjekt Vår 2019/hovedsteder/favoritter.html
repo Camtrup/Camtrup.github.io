@@ -35,6 +35,10 @@
       </nav>
     </header>
 
+    <div style="height:400px;">
+
+    </div>
+
     <footer>
 
       <div class="kontakt">
@@ -53,7 +57,7 @@
       </div>
 
       <div class="rest">
-        <p>Copyright©2018 CAM filmer</p>
+        <p>Copyright©2019 CAM filmer</p>
         <button id="footerknapp" type="button" onclick="myFunction()" name="button">&#8593;Tilbake Til Topp</button>
       </div>
 
@@ -61,9 +65,36 @@
 
     <script>
 
-    const main = document.querySelector("main")
-
     const db = firebase.database();
+    const onskede = db.ref("favoritter/")
+
+
+    function visSerier(snapshot){
+        let onskede = snapshot.val();
+        let key = snapshot.key;
+        main.innerHTML +=`
+            <div class="serier">
+                <a href="../serier/serie.html?id=${key}">
+                <img src=${serier.Bilde}>
+                <div class="overlay">
+                  <p class="tittel">${serier.Tittel}</p>
+                  <p class="imdb"><span style="font-size:100%;color:yellow;">&starf;</span>${serier.Rating}</p>
+                  <p class="sjanger">Sjanger: ${serier.Sjanger1} ${serier.Sjanger2}</p>
+                  <p class="skuespillere">Skuespillere: <br> ${serier.Skuespillere}</p>
+                  <p class="ar">År: ${serier.År}</p>
+                </div>
+                </a>
+
+            </div>
+        `};
+
+
+
+
+
+
+
+
 
     function myFunction() {
         var elmnt = document.getElementById("logo");

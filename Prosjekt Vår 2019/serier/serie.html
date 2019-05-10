@@ -35,34 +35,35 @@
         </ul>
       </nav>
     </header>
+    <div class="serie_wrap">
+      <main class="serie_main">
 
-    <main>
+      </main>
 
-    </main>
+      <footer>
 
-    <footer>
+        <div class="kontakt">
+          <p class="leder">Kontakt</p>
+          <p>Sandvika Videregående Skole</p>
+          <p>Elias Smiths vei 15</p>
+          <p>Sandvika</p>
+        </div>
 
-      <div class="kontakt">
-        <p class="leder">Kontakt</p>
-        <p>Sandvika Videregående Skole</p>
-        <p>Elias Smiths vei 15</p>
-        <p>Sandvika</p>
-      </div>
+        <div class="medier">
+          <p class="leder">Sosiale Medier</p>
+          <p><a href="">Instagram</a></p>
+          <p><a href="">Facebook</a></p>
+          <p><a href="">Twitter</a></p>
 
-      <div class="medier">
-        <p class="leder">Sosiale Medier</p>
-        <p><a href="">Instagram</a></p>
-        <p><a href="">Facebook</a></p>
-        <p><a href="">Twitter</a></p>
+        </div>
 
-      </div>
+        <div class="rest">
+          <p>Copyright©2019 CAM filmer</p>
+          <button id="footerknapp" type="button" onclick="myFunction()" name="button">&#8593;Tilbake Til Topp</button>
+        </div>
 
-      <div class="rest">
-        <p>Copyright©2018 CAM filmer</p>
-        <button id="footerknapp" type="button" onclick="myFunction()" name="button">&#8593;Tilbake Til Topp</button>
-      </div>
-
-    </footer>
+      </footer>
+    </div>
 
     <script>
       const main = document.querySelector("main")
@@ -81,7 +82,9 @@
 
           main.innerHTML +=`
             <article class="generert_serie">
+            <br>
               <h1>${serier.Tittel}</h1>
+              <br>
               <img src="${serier.Bilde}">
               <embed width="420" height="268"
               src="${serier.trailer}">
@@ -105,6 +108,14 @@
               elmnt.scrollIntoView();
           }
 
+          const favoritt = db.ref("favoritter/"+ id)
+
+          function favorittKjør(verdi) {
+        firebase.database().ref('favoritter/' + id).set({
+          verdi:1
+        });
+      }
+      favorittKjør();
 
     </script>
   </body>

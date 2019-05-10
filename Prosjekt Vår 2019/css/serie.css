@@ -1,3 +1,4 @@
+/*Serier_grid i kanal-sidene*/
 .serier a{
   text-decoration: none;
   color: black;
@@ -20,6 +21,8 @@
 .serier {
   background-color: lightgrey;
 }
+
+/*Knapper og Form for å sortere serier-grid*/
 select {
   border: none;
   margin: 20px 0 20px 0;
@@ -48,4 +51,18 @@ select {
   .serier{
     border-bottom: solid black 3px;
   }
+}
+/*Innhold i serie.html*/
+.serie_wrap {
+ box-shadow: 0 0px 0px 0px white, 0 0px 0px 0px white, 12px 0 15px -4px
+ rgb(170, 166, 166),
+ -12px 0 15px -4px
+ rgb(170, 166, 166);
+}
+.serie_main h1 {
+  background-color: #f4f4f4;
+  margin-top:0;
+}
+.generert_serie p {
+  margin-left: 30px;
 }
