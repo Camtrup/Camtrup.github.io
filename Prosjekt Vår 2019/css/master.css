@@ -54,7 +54,11 @@ footer a {
   text-transform: uppercase;
   background-color: #D6C3C3;
 }
-
+@media(max-width:850px){
+  .medier {
+    margin-left: 20px;
+  }
+}
 @media(max-width:650px){
   footer {
     display: grid;

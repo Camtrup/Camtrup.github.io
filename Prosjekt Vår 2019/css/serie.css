@@ -51,6 +51,7 @@ select {
   .serier{
     border-bottom: solid black 3px;
   }
+
 }
 /*Innhold i serie.html*/
 .serie_wrap {
@@ -68,9 +69,22 @@ select {
 .generert_serie p {
   margin-left: 5%;
 }
+.generert_serie a {
+  color: purple;
+}
 .fav {
   width: 200px;
   margin-left: 5%;
+}
+@media(max-width:800px){
+  .serie_wrap {
+    width:90%;
+  }
+}
+@media(max-width:540px){
+  embed {
+    width:90%;
+  }
 }
 
 

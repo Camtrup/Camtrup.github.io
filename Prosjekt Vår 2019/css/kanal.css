@@ -23,6 +23,12 @@
     grid-column-gap: 30px;
   }
 }
+@media(max-width:660px){
+  .kanaler_grid {
+    display: grid;
+    grid-template-columns: 1fr ;
+  }
+}
 @media(max-width:610px){
   .kanaler_grid {
     display: grid;
