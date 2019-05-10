@@ -6,9 +6,6 @@ body {
   line-height: 1.5;
   margin-left: 30px;
   background-color: #f4f4f4;
-  min-height: 1000px;
-  margin:0;
-  padding:0;
 }
 
 .navbar  {
@@ -16,102 +13,23 @@ body {
   grid-template-columns: 100px 43px 70px 100px;
   grid-template-rows: 22px;
   grid-column-gap: 75px;
-  height: 80px;
 }
 .navbar li a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
 }
-
-/*index.html*/
 @media(max-width:750px){
   .navbar {
     display:grid;
     grid-template-columns: 500px;
     grid-template-rows: 70px 50px 50px 50px;
+
   }
   header {
-      height: 240px;
-    }
-  .index-main .beskrivelse {
-    width: 70%;
+    height: 180px;
   }
 }
-@media(max-width:610px){
-  .index-main {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
-
-.index-main {
-    grid-template-columns: 1fr;
-  }
-
-.index-main {
-  background-color: #0f1012;
-  display: grid;
-  grid-template-columns: 350px auto;
-}
-.index-main h2 {
-  color: #f4f4f4;
-}
-.index-main .beskrivelse p {
-  color: #f4f4f4;
-}
-.index-main .beskrivelse a:hover {
-  opacity: 0.2;
-}
-.index-main .beskrivelse a {
-  color: #DEDCDC;
-  text-decoration: none;
-  border: solid #DEDCDC 3px;
-  padding: 1px;
-  transition: 0.3s;
-}
-.index-main .beskrivelse .beskrivelse-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.slider {
-width: 300px;
-margin:0;
-}
-
-.slider-wrapper {
-width: 100%;
-height: 500px;
-position: relative;
-}
-
-.slide {
-float: left;
-position: absolute;
-width: 100%;
-height: 100%;
-opacity: 0;
-transition: 1s linear;
-}
-
-.slider-wrapper > .slide:first-child {
-opacity: 1;
-}
-
-
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-
-
-
 /* Underlinje som beveger seg i navbar */
 .navbar p {
   display: inline-block;
@@ -153,6 +71,7 @@ opacity: 1;
   list-style: none;
 }
  header {
+   padding-bottom: 50px;
   border-bottom: solid black 3px;
 }
 .serier a{
@@ -162,8 +81,6 @@ opacity: 1;
 
 select {
   border: none;
-  margin: 20px 0 20px 0;
-  height: 10px;
 
 }
 
@@ -172,45 +89,34 @@ select {
 
 .serier_grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 25px;
   margin-left: 30px;
 }
 
-@media(max-width:1000px){
-  .serier_grid {
+@media(max-width:1100px){
+  .serier_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+  }
+}
+@media(max-width:750px){
+  .serier_grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr)
   }
-  .serier a{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .serier {
-    background-color: lightgrey;
-  }
 }
-@media(max-width:800px){
-  .serier_grid {
+@media(max-width:500px){
+  .serier_grid{
     display: grid;
     grid-template-columns: repeat(1, 1fr)
   }
-  .serier a {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  embed {
+    width: 350px;
   }
-  .serier{
-    border-bottom: solid black 3px;
-  }
-
 }
-
 
 /*Kanaler.html*/
-.kanaler {
-  height:170px;
-  width:290px;
-}
 .kanaler_grid {
   margin-top: 60px;
   display: grid;
@@ -228,11 +134,20 @@ main .kanaler img:hover{
 main .kanaler img {
   transition: 0.2s;
 }
-
-
-
+@media(max-width:1100px){
+  .kanaler_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+@media(max-width:750px){
+  .kanaler_grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr)
+  }
+}
 /*Serier overlay*/
-@media(min-width:1000px){
+
 .serier {
   position: relative;
   width: 50%;
@@ -242,12 +157,6 @@ main .kanaler img {
   display: block;
   width: 100%;
   height: auto;
-}
-.skuespillere {
-  display: none;
-}
-.ar {
-  display: none;
 }
 
 .overlay {
@@ -260,7 +169,7 @@ main .kanaler img {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: grey;
+  background-color: #2098D1;
 }
 
 .serier:hover .overlay {
@@ -300,16 +209,3 @@ main .kanaler img {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-}
-
-@media(max-width:610px){
-  .index-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    height: 720px;
-  }
-  .index-main .beskrivelse {
-    margin-left: 15px;
-  }
-}
-/*Slideshow*/

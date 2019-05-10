@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-
-
+    <link rel="stylesheet" href="../css/master.css">
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
     <script>
       // Initialize Firebase
@@ -17,7 +16,7 @@
       firebase.initializeApp(config);
     </script>
 
-    <link rel="stylesheet" href="../css/master.css">
+
     <meta charset="utf-8">
     <link rel="shortcut icon" href="../bilder/logo.jpg">
     <title>CAM Serier</title>
@@ -35,132 +34,99 @@
       </nav>
     </header>
     <main class="index-main">
-    <!-- Slideshow container -->
-    <div clas="grid-top-index">
-
-    <div class="slideshow-container">
-
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade">
-        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
-        <p>Følg Den Nye Sesongen</p>
-        <img src="../bilder/PS/arya.jpg">
+      <div class="slider" id="main-slider"><!-- outermost container element -->
+      	<div class="slider-wrapper"><!-- innermost wrapper element -->
+      		<img src="../bilder/PS/bran.jpg" alt="First" class="slide" /><!-- slides -->
+      		<img src="../bilder/PS/arya.jpg" alt="Second" class="slide" />
+      		<img src="../bilder/PS/jonsnow.jpg" alt="Third" class="slide" />
+          <img src="../bilder/PS/sam.jpg" alt="Fourth" class="slide" />
+      	</div>
       </div>
-
-      <div class="mySlides fade">
-        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
-        <p>Følg Den Nye Sesongen</p>
-        <img src="../bilder/PS/bran.jpg">
+      <div class="beskrivelse">
+        <h2>Følg Den Nye Sesongen av Game of Thrones</h2>
+          <p>Bli med på den åttende og siste reisen
+            i George R. R Martins univers der skjebnen
+            til Westeros blir bestemt. Hvem Vinner?</p>
+          <div class="beskrivelse-grid">
+            <div>
+              <a href="../serier/serie.html?id=gameofthrones">Les Mer</a>
+            </div>
+            <div>
+              <a href="https://no.hbonordic.com">Start Reisen</a>
+            </div>
+          </div>
       </div>
-
-      <div class="mySlides fade">
-        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
-        <p>Følg Den Nye Sesongen</p>
-        <img src="../bilder/PS/brienne.jpg">
-      </div>
-
-      <div class="mySlides fade">
-        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
-        <p>Følg Den Nye Sesongen</p>
-        <img src="../bilder/PS/cers.jpg">
-      </div>
-
-      <div class="mySlides fade">
-        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
-        <p>Følg Den Nye Sesongen</p>
-        <img src="../bilder/PS/davos.jpg">
-      </div>
-
-      <div class="mySlides fade">
-        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
-        <p>Følg Den Nye Sesongen</p>
-        <img src="../bilder/PS/euron.jpg">
-      </div>
-
-      <div class="mySlides fade">
-        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
-        <p>Følg Den Nye Sesongen</p>
-        <img src="../bilder/PS/grey.jpg">
-      </div>
-
-      <div class="mySlides fade">
-        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
-        <p>Følg Den Nye Sesongen</p>
-        <img src="../bilder/PS/hound.jpg">
-      </div>
-
-      <div class="mySlides fade">
-        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
-        <p>Følg Den Nye Sesongen</p>
-        <img src="../bilder/PS/jaim.jpg">
-      </div>
-
-      <div class="mySlides fade">
-        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
-        <p>Følg Den Nye Sesongen</p>
-        <img src="../bilder/PS/jonsnow.jpg">
-      </div>
-
-      <div class="mySlides fade">
-        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
-        <p>Følg Den Nye Sesongen</p>
-        <img src="../bilder/PS/king.jpg">
-      </div>
-
-      <div class="mySlides fade">
-        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
-        <p>Følg Den Nye Sesongen</p>
-        <img src="../bilder/PS/sam.jpg">
-      </div>
-
-      <div class="mySlides fade">
-        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
-        <p>Følg Den Nye Sesongen</p>
-        <img src="../bilder/PS/sansa.jpg">
-      </div>
-
-      <div class="mySlides fade">
-        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
-        <p>Følg Den Nye Sesongen</p>
-        <img src="../bilder/PS/targ.jpg">
-      </div>
-
-      <div class="mySlides fade">
-        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
-        <p>Følg Den Nye Sesongen</p>
-        <img src="../bilder/PS/theon.jpg">
-      </div>
-
-      <div class="mySlides fade">
-        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
-        <p>Følg Den Nye Sesongen</p>
-        <img src="../bilder/PS/tyrion.jpg">
-      </div>
-
-      <div class="mySlides fade">
-        <p class="vis"><a href="../serier/serie.html?id=gameofthrones">Vis mer</a></p>
-        <p>Følg Den Nye Sesongen</p>
-        <img src="../bilder/PS/varys.jpg">
-      </div>
-
-
     </main>
     <script>
 
-        var slideIndex = 0;
-    showSlides();
+    (function() {
 
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}
-      slides[slideIndex-1].style.display = "block";
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
+	function Slideshow( element ) {
+		this.el = document.querySelector( element );
+		this.init();
+	}
+
+	Slideshow.prototype = {
+		init: function() {
+			this.wrapper = this.el.querySelector( ".slider-wrapper" );
+			this.slides = this.el.querySelectorAll( ".slide" );
+			this.previous = this.el.querySelector( ".slider-previous" );
+			this.next = this.el.querySelector( ".slider-next" );
+			this.index = 0;
+			this.total = this.slides.length;
+			this.timer = null;
+
+			this.action();
+			this.stopStart();
+		},
+		_slideTo: function( slide ) {
+			var currentSlide = this.slides[slide];
+			currentSlide.style.opacity = 1;
+
+			for( var i = 0; i < this.slides.length; i++ ) {
+				var slide = this.slides[i];
+				if( slide !== currentSlide ) {
+					slide.style.opacity = 0;
+				}
+			}
+		},
+		action: function() {
+			var self = this;
+			self.timer = setInterval(function() {
+				self.index++;
+				if( self.index == self.slides.length ) {
+					self.index = 0;
+				}
+				self._slideTo( self.index );
+
+			}, 3000);
+		},
+		stopStart: function() {
+			var self = this;
+			self.el.addEventListener( "mouseover", function() {
+				clearInterval( self.timer );
+				self.timer = null;
+
+			}, false);
+			self.el.addEventListener( "mouseout", function() {
+				self.action();
+
+			}, false);
+		}
+
+
+	};
+
+	document.addEventListener( "DOMContentLoaded", function() {
+
+		var slider = new Slideshow( "#main-slider" );
+
+	});
+
+
+})();
+
+
 
     </script>
   </body>
