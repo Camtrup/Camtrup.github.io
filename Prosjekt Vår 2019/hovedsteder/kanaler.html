@@ -18,6 +18,7 @@
     </script>
 
     <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/kanal.css">
     <meta charset="utf-8">
     <link rel="shortcut icon" href="../bilder/logo.jpg">
     <title>CAM Serier</title>
@@ -27,17 +28,43 @@
     <header>
       <nav>
         <ul class="navbar">
-          <li><a href="../hovedsteder/index.html"><img src="../bilder/logo.jpg" alt="Logo"></a></li>
+          <li><a href="../hovedsteder/index.html"><img id="logo" src="../bilder/logo.jpg" alt="Logo"></a></li>
           <li><a href="../hovedsteder/index.html"><p>Hjem</p></a></li>
           <li><a class="current" href="../hovedsteder/kanaler.html"><p>Kanaler</p></a></li>
           <li><a href="../hovedsteder/favoritter.html"><p>Favoritter</p></a></li>
         </ul>
       </nav>
     </header>
+    <div class="kanaler_wrap">
+      <h2>De største Produsentene innen TV</h2>
+      <main class="kanaler_grid">
 
-    <main class="kanaler_grid">
+      </main>
+    </div>
+    <footer>
 
-    </main>
+      <div class="kontakt">
+        <p class="leder">Kontakt</p>
+        <p>Sandvika Videregående Skole</p>
+        <p>Elias Smiths vei 15</p>
+        <p>Sandvika</p>
+      </div>
+
+      <div class="medier">
+        <p class="leder">Sosiale Medier</p>
+        <p><a href="">Instagram</a></p>
+        <p><a href="">Facebook</a></p>
+        <p><a href="">Twitter</a></p>
+
+      </div>
+
+      <div class="rest">
+        <p>Copyright©2018 CAM filmer</p>
+        <button id="footerknapp" type="button" onclick="myFunction()" name="button">&#8593;Tilbake Til Topp</button>
+      </div>
+
+    </footer>
+
 
     <script type="text/javascript">
     const main = document.querySelector("main");
@@ -52,7 +79,14 @@
         let kanaler = snapshot.val();
         main.innerHTML +=`
             <div class="kanaler">
-                <a href="../kanaler/${kanaler.ID}.html"><img src="../bilder/${kanaler.Bilde}"></a>
+                <a href="../kanaler/${kanaler.ID}.html">
+                  <img src="../bilder/${kanaler.Bilde}">
+                  <div class="over">
+                    <p class="textone">${kanaler.ID}</p>
+                    <p class="texttwo">Kjente Verk: <br> ${kanaler.kjente}<p>
+                    <p class="textthree"><p>
+                  </div>
+                </a>
             </div>
         `};
 
@@ -60,6 +94,10 @@
           main.innerHTML=""
           kanaler.on("child_added", genererKanaler)
 
+        }
+        function myFunction() {
+            var elmnt = document.getElementById("logo");
+            elmnt.scrollIntoView();
         }
 
         visKanaler();

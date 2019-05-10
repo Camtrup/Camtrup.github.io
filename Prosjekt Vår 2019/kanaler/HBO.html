@@ -18,6 +18,7 @@
     </script>
 
     <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/serie.css">
     <meta charset="utf-8">
     <link rel="shortcut icon" href="../bilder/logo.jpg">
     <title>CAM Serier</title>
@@ -27,7 +28,7 @@
     <header>
       <nav>
         <ul class="navbar">
-          <li><a href="../hovedsteder/index.html"><img src="../bilder/logo.jpg" alt="Logo"></a></li>
+          <li><a href="../hovedsteder/index.html"><img id="logo" src="../bilder/logo.jpg" alt="Logo"></a></li>
           <li><a href="../hovedsteder/index.html"><p>Hjem</p></a></li>
           <li><a class="current" href="../hovedsteder/kanaler.html"><p>Kanaler</p></a></li>
           <li><a href="../hovedsteder/favoritter.html"><p>Favoritter</p></a></li>
@@ -70,6 +71,30 @@
 
     </main>
 
+    <footer>
+
+      <div class="kontakt">
+        <p class="leder">Kontakt</p>
+        <p>Sandvika Videregående Skole</p>
+        <p>Elias Smiths vei 15</p>
+        <p>Sandvika</p>
+      </div>
+
+      <div class="medier">
+        <p class="leder">Sosiale Medier</p>
+        <p><a href="">Instagram</a></p>
+        <p><a href="">Facebook</a></p>
+        <p><a href="">Twitter</a></p>
+
+      </div>
+
+      <div class="rest">
+        <p>Copyright©2018 CAM filmer</p>
+        <button id="footerknapp" type="button" onclick="myFunction()" name="button">&#8593;Tilbake Til Topp</button>
+      </div>
+
+    </footer>
+
     <script>
     const main = document.querySelector("main");
 
@@ -81,17 +106,19 @@
         let serier = snapshot.val();
         let key = snapshot.key;
         main.innerHTML +=`
-            <div class="serier">
-                <a href="../serier/serie.html?id=${key}">
-                <img src=${serier.Bilde}>
-                <div class="overlay">
-                  <p class="tittel textthree">${serier.Tittel}</p>
-                  <p class="imdb textone"><span style="font-size:100%;color:yellow;">&starf;</span>${serier.Rating}</p>
-                  <p class="sjanger texttwo">Sjanger: ${serier.Sjanger1}  ${serier.Sjanger2}</p>
-                </div>
-                </a>
-
+        <div class="serier">
+            <a href="../serier/serie.html?id=${key}">
+            <img src=${serier.Bilde}>
+            <div class="overlay">
+              <p class="tittel">${serier.Tittel}</p>
+              <p class="imdb"><span style="font-size:100%;color:yellow;">&starf;</span>${serier.Rating}</p>
+              <p class="sjanger">Sjanger: ${serier.Sjanger1} ${serier.Sjanger2}</p>
+              <p class="skuespillere">Skuespillere: <br> ${serier.Skuespillere}</p>
+              <p class="ar">År: ${serier.År}</p>
             </div>
+            </a>
+
+        </div>
         `};
 
         function annet(selectObject){
@@ -310,6 +337,11 @@
             .on("child_added", visSerier)
             }
             kunHBO();
+
+            function myFunction() {
+                var elmnt = document.getElementById("logo");
+                elmnt.scrollIntoView();
+            }
 
     </script>
 

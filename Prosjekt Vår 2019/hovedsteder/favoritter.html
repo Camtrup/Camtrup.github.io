@@ -27,7 +27,7 @@
     <header>
       <nav>
         <ul class="navbar">
-          <li><a href="../hovedsteder/index.html"><img src="../bilder/logo.jpg" alt="Logo"></a></li>
+          <li><a href="../hovedsteder/index.html"><img id="logo" src="../bilder/logo.jpg" alt="Logo"></a></li>
           <li><a href="../hovedsteder/index.html"><p>Hjem</p></a></li>
           <li><a href="../hovedsteder/kanaler.html"><p>Kanaler</p></a></li>
           <li><a class="current" href="../hovedsteder/favoritter.html"><p>Favoritter</p></a></li>
@@ -35,12 +35,41 @@
       </nav>
     </header>
 
+    <footer>
+
+      <div class="kontakt">
+        <p class="leder">Kontakt</p>
+        <p>Sandvika Videregående Skole</p>
+        <p>Elias Smiths vei 15</p>
+        <p>Sandvika</p>
+      </div>
+
+      <div class="medier">
+        <p class="leder">Sosiale Medier</p>
+        <p><a href="">Instagram</a></p>
+        <p><a href="">Facebook</a></p>
+        <p><a href="">Twitter</a></p>
+
+      </div>
+
+      <div class="rest">
+        <p>Copyright©2018 CAM filmer</p>
+        <button id="footerknapp" type="button" onclick="myFunction()" name="button">&#8593;Tilbake Til Topp</button>
+      </div>
+
+    </footer>
+
     <script>
 
     const main = document.querySelector("main")
 
     const db = firebase.database();
-    
+
+    function myFunction() {
+        var elmnt = document.getElementById("logo");
+        elmnt.scrollIntoView();
+    }
+
 
 
 
