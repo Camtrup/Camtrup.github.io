@@ -283,3 +283,7 @@ opacity: 1;
     grid-template-columns: 1fr;
   }
 }
+/*Favoritter.html*/
+.main_favoritt {
+  min-height: 400px;
+}

@@ -36,9 +36,21 @@
       </nav>
     </header>
     <div class="serie_wrap">
-      <main class="serie_main">
+      <div class="beskrivelse_grid">
+        <main class="serie_main">
 
-      </main>
+        </main>
+
+        <div class="fav">
+          <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" onclick="kjørFavoritt()" id="myonoffswitch" checked>
+            <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+          </div>
+        </div>
+      </div>
 
       <footer>
 
@@ -76,10 +88,11 @@
       const serier = db.ref("serier/" + id)
 
 
+
       function visSerie(snapshot){
         let serier = snapshot.val();
         let key = snapshot.key;
-
+          main.innerHTML=""
           main.innerHTML +=`
             <article class="generert_serie">
             <br>
@@ -108,14 +121,22 @@
               elmnt.scrollIntoView();
           }
 
-          const favoritt = db.ref("favoritter/"+ id)
+          function oppdater(){
+            db.ref("serier/" + id + "/verdi").set(1)
+          }
 
-          function favorittKjør(verdi) {
-        firebase.database().ref('favoritter/' + id).set({
-          verdi:1
-        });
-      }
-      favorittKjør();
+          function fjern(){
+            db.ref("serier/" + id +"/verdi").set(0)
+          }
+
+          function kjørFavoritt() {
+            var checkBox = document.getElementById("myonoffswitch");
+            if (checkBox.checked == true){
+              fjern();
+            } else {
+               oppdater();
+            }
+          }
 
     </script>
   </body>

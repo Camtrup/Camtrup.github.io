@@ -18,6 +18,7 @@
     </script>
 
     <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/serie.css">
     <meta charset="utf-8">
     <link rel="shortcut icon" href="../bilder/logo.jpg">
     <title>CAM Serier</title>
@@ -35,9 +36,9 @@
       </nav>
     </header>
 
-    <div style="height:400px;">
-
-    </div>
+    <main class="main_favoritt">
+      
+    </main>
 
     <footer>
 
@@ -64,13 +65,13 @@
     </footer>
 
     <script>
-
+    const main = document.querySelector("main")
     const db = firebase.database();
-    const onskede = db.ref("favoritter/")
+    const serier = db.ref("serier/")
 
 
     function visSerier(snapshot){
-        let onskede = snapshot.val();
+        let serier = snapshot.val();
         let key = snapshot.key;
         main.innerHTML +=`
             <div class="serier">
@@ -101,6 +102,14 @@
         elmnt.scrollIntoView();
     }
 
+    function visFavoritter(){
+      main.innerHTML=""
+      serier
+        .orderByChild("verdi")
+        .equalTo(1)
+        .on("child_added", visSerier)
+    }
+visFavoritter();
 
 
 
