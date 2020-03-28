@@ -1,0 +1,34 @@
+#map {
+height: 500px;
+width: 600px;
+}
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+margin-left: 40px;
+margin-top: 30px;
+}
+#inputSted {
+  height: 20px;
+}
+#sokKnapp {
+  height: 20px;
+  border-radius: 10px;
+}
+.tekst {
+  display: none;
+  grid-template-columns: 400px;
+  border: solid black 2px;
+  width: 400px;
+  margin-top: 29px;
+}
+.tekst p {
+  border-bottom: solid black 1px;
+  margin: 30px;
+  height: 40px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 50% 20%
+}

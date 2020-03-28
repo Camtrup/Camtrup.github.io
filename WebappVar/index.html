@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KART</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./CSS/master.css">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="mapButtonInput">
+
+        <input type="text" id="inputSted" placeholder="Oppgi Stedsnavn">
+
+        <button type="button" id="sokKnapp" onclick="sok()">Søk</button>
+
+        <button type="button" id="infoKnapp" onclick="alertInfo()">Info</button>
+
+        <div id="map"></div>
+
+      </div>
+
+      <div class="tekst">
+
+        <p id="tid"></p>
+        <p id="stedsNavnTekst"></p>
+        <p id="tidsForskjell"></p>
+        <p id="tidsSoneTekst"></p>
+
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!--Eksternt script med get funksjon som gjør det lettere å få tak i informasjon fra api-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAofHBQXZLbrGW906B-70Ns73kgEEZEytI&callback=initMap"async defer></script>
+    <script src="./script.js">
+
+    </script>
+
+  </body>
+</html>
